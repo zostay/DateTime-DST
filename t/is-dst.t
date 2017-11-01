@@ -14,6 +14,7 @@ plan 6;
         hour => 0,
         minute => 0,
         second => 0,
+        timezone => -6 * 3600,
     );
 
     is is-dst($time.posix), False, '2016-01-15 is not DST (Int)';
@@ -29,6 +30,7 @@ plan 6;
         hour => 0,
         minute => 0,
         second => 0,
+        timezone => -6 * 3600,
     );
 
     is is-dst($time.posix), True, '2016-06-15 is DST (Int)';
