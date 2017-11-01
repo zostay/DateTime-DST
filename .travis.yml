@@ -3,6 +3,7 @@ install:
   - rakudobrew build-zef
   - zef install --depsonly .
 script:
+  - (cd src; perl6 src/Configure.p6; make)
   - prove -v -e "perl6 --ll-exception -Ilib" t
 after_success:
   - zef list --installed --verbose
