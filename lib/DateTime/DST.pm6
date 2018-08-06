@@ -2,14 +2,11 @@ use v6;
 
 use LibraryMake;
 
-my sub library {
-    my $so = get-vars('')<SO>;
-    return "%?RESOURCES{"libdsthelper$so"}";
-}
+my constant DSTHELPER = %?RESOURCES<libraries/dsthelper>.absolute;
 
 module DateTime::DST:ver<0.2>:auth<github:zostay> {
     use NativeCall;
-    my sub is_dst(int64) returns int64 is native(&library) { * }
+    my sub is_dst(int64) returns int64 is native(DSTHELPER) { * }
 
     multi is-dst(Instant $time) returns Bool is export {
         my ($posix, $leap-sec) = $time.to-posix;

@@ -10,6 +10,7 @@
         "DateTime::DST": "lib/DateTime/DST.pm6"
     },
     "depends" : [ "LibraryMake" ],
+    "resources" : [ "library/dsthelper" ],
     "auth": "github:zostay",
     "test-depends" : [ "Test" ],
     "source-url" : "git://github.com/zostay/DateTime-DST.git",
