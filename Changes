@@ -1,4 +1,4 @@
-{{$NEXT}}
+v0.3	2018-08-06
 
     * Bugfix #6: Updates the build to make sure it works with the latest
       version of zef and LibraryMake.

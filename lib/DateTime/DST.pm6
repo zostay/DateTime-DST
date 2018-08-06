@@ -4,7 +4,7 @@ use LibraryMake;
 
 my constant DSTHELPER = %?RESOURCES<libraries/dsthelper>.absolute;
 
-module DateTime::DST:ver<0.2>:auth<github:zostay> {
+module DateTime::DST:ver<0.3>:auth<github:zostay> {
     use NativeCall;
     my sub is_dst(int64) returns int64 is native(DSTHELPER) { * }
 
