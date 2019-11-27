@@ -29,7 +29,7 @@
   "version": "0.3",
   "meta-version": "0",
   "authors": [
-    
+
   ],
-  "description": "Make localtime[8] available as is-dst to Perl 6"
+  "description": "Make localtime[8] available as is-dst to Raku"
 }

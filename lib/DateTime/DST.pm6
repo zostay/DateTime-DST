@@ -65,6 +65,6 @@ Sterling Hanenkamp C<< <hanenkamp@cpan.org> >>
 
 Copyright 2016 Andrew Sterling Hanenkamp.
 
-This software is made available under the same terms as Perl 6 itself.
+This software is made available under the same terms as Raku itself.
 
 =end pod
