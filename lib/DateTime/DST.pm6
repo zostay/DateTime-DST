@@ -1,11 +1,11 @@
 use v6;
 
+use NativeCall;
 use LibraryMake;
 
-my constant DSTHELPER = %?RESOURCES<libraries/dsthelper>.absolute;
-
 module DateTime::DST:ver<0.3>:auth<github:zostay> {
-    use NativeCall;
+    my constant DSTHELPER = %?RESOURCES<libraries/dsthelper>.absolute;
+    
     my sub is_dst(int64) returns int64 is native(DSTHELPER) { * }
 
     multi is-dst(Instant $time) returns Bool is export {
